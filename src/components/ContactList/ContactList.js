@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'redux/selectors';
 import { Contact } from 'components/Contact/Contact';
 
-const ContactList = ({ contact }) => {
+const ContactList = () => {
     const contacts = useSelector(getContacts);
   const { input } = useSelector(getFilter);
 
